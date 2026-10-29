@@ -1,0 +1,14 @@
+{
+  "name": "why-the-code-is-like-this",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TraceWhy: reconstruct why the code is like this from a knowledge graph of repository history",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "db:init": "npm run db:init --prefix backend",
+    "test": "npm test --prefix backend",
+    "build": "npm run build --prefix frontend"
+  }
+}
