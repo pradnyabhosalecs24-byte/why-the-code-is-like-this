@@ -1,6 +1,0 @@
-node_modules/
-dist/
-.env
-backend/.cache/
-*.log
-.DS_Store
