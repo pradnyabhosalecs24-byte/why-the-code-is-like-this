@@ -1,0 +1,22 @@
+{
+  "name": "why-the-code-is-like-this",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Why The Code Is Like This (TraceWhy): reconstruct why code exists from a knowledge graph of repository history",
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend",
+    "demo": "node scripts/run.js demo",
+    "dev": "node scripts/run.js dev",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "db:init": "npm run db:init --prefix backend",
+    "seed:demo": "npm run seed:demo --prefix backend",
+    "test": "npm test --prefix backend && npm test --prefix frontend",
+    "test:e2e": "playwright test",
+    "build": "npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
